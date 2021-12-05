@@ -56,11 +56,10 @@ def find_prime_factors(value: int) -> Dict[int, int]:
                     results[prime] += 1
                 break
         value = dividend
-    # if value not in results.keys():
-    #     results[value] = 1
-    # else:
-    #     results[value] += 1
-    results[value] = 1
+    if value not in results.keys():
+        results[value] = 1
+    else:
+        results[value] += 1
     return results
     
 

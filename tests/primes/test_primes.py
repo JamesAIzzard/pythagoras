@@ -40,6 +40,12 @@ class TestFindPrimeFactors(TestCase):
             {2:1}
         )
     
+    def test_factorises_9_correctly(self):
+        self.assertEqual(
+            primes.find_prime_factors(9),
+            {3: 2}
+        )
+
     def test_factorises_10_correctly(self):
         self.assertEqual(
             primes.find_prime_factors(10),
